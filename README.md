@@ -1,8 +1,8 @@
 # KunstigIntelligens_Eksamensprojekt_BDReminder
 ## Prompt history
 1. [Full: Prompt history](https://chatgpt.com/share/dc11506d-26ab-40f1-ba88-8334cb481dd5)
-2. [Indledende prompt history](https://htmlpreview.github.io/?https://github.com/Eo-Le-LearnToHack/KunstigIntelligens_Eksamensprojekt_BDReminder/blob/main/Prompt_history/01_Prompt_history.html)
-3. [Sektion 1: Tilføjet individual user authentication](https://htmlpreview.github.io/?https://github.com/Eo-Le-LearnToHack/KunstigIntelligens_Eksamensprojekt_BDReminder/blob/main/Prompt_history/02_Prompt_history.html)
+2. [Indledende prompt history](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Eo-Le-LearnToHack/KunstigIntelligens_Eksamensprojekt_BDReminder/main/Prompt_history/01_Prompt_history.html?token=GHSAT0AAAAAACTZNUCCA2OJ4P6OPMUCBAKSZTSQ6PQ)
+3. [Sektion 1: Tilføjet individual user authentication](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Eo-Le-LearnToHack/KunstigIntelligens_Eksamensprojekt_BDReminder/main/Prompt_history/02_Prompt_history.html?token=GHSAT0AAAAAACTZNUCCBINO35EOOR7TCEWIZTSQ7KQ)
   
 #### Beskrivelse
 ```
