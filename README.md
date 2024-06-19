@@ -1,5 +1,5 @@
 # KunstigIntelligens_Eksamensprojekt_BDReminder
-## Prompt history - ChatGPT 4o
+# Prompt history - ChatGPT 4o
 <details id="ChatGPT 4o">
   <summary>Prompt history - ChatGPT 4o</summary>
 
@@ -18,7 +18,7 @@
      Yderligere ændres indledende prompt en lille smule ift. den erfaring der er dannet i nuværende samtale med ChatGPT 4o  
      ```
   
-#### Beskrivelse
+### Beskrivelse
 ```
 Jeg anvendte CREATE modellen til at udarbejde min indledende prompt.
 ```
@@ -27,13 +27,22 @@ Jeg anvendte CREATE modellen til at udarbejde min indledende prompt.
 <details id="ChatGPT 4o">
   <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
 
-### Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
+## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
 1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
  
-#### Beskrivelse
+### Beskrivelse
 ```
 I sektion 1 blev jeg nysgerrig på hvad ASP.NET Core Web App var og søgte mere viden på youtube, hvor jeg stødte på ovenstående video.
 11 minutter i videoen blev der valgt indivual user ved authentication som ikke var dækket af guiden i Sektion 1.
 Jeg spurgte ChatGPT hvorfor dette ikke var tilfældet og ChatGPT valgte at opdatere Sektion 1 for at afspejle denne indstilling af authentican til indivial user.
 ``` 
+</details>
+
+# Prompt history - ChatGPT 4
+<details id="ChatGPT 4">
+  <summary>Prompt history - ChatGPT 4</summary>
+
+## Prompt history - ChatGPT 4
+  1. [Full: Prompt history]()
+
 </details>
