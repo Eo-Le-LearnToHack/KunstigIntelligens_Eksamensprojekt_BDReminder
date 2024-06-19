@@ -1,6 +1,6 @@
 # KunstigIntelligens_Eksamensprojekt_BDReminder
 ## Prompt history - ChatGPT 4o
-<details>
+<details id="ChatGPT 4o">
   <summary>Prompt history - ChatGPT 4o</summary>
 
 ## Prompt history - ChatGPT 4o
@@ -22,7 +22,11 @@
 ```
 Jeg anvendte CREATE modellen til at udarbejde min indledende prompt.
 ```
-  
+</details>
+
+<details id="ChatGPT 4o">
+  <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
+
 ### Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
 1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
  
