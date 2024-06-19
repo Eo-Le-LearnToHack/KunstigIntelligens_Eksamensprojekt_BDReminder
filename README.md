@@ -1,7 +1,7 @@
 # KunstigIntelligens_Eksamensprojekt_BDReminder
-## Prompt history - ChatGPT 4o
+## Prompt history
 <details>
-  <summary>## Prompt history</summary>
+  <summary>## Prompt history - ChatGPT 4o</summary>
   
   1. [Full: Prompt history](https://chatgpt.com/share/dc11506d-26ab-40f1-ba88-8334cb481dd5)
   2. [Indledende prompt history](https://htmlpreview.github.io/?https://raw.githubusercontent.com/Eo-Le-LearnToHack/KunstigIntelligens_Eksamensprojekt_BDReminder/main/Prompt_history/01_Prompt_history.html)
@@ -11,7 +11,7 @@
 Kan ikke dele den fulde originale samtale fordi der blev uploaded et billede under oprettelse af ASP.Net projektet i Visual Studio. Billedet blev uploadet fordi guiden i ChatGPT 4o ikke var retvisende.
 Desværre er det i mod ChatGPTs politik at dele samtaler med billeder. Der forsøgte at få ChatGPT til selv at generede hele samtalen som en html fil, se linket i punkt 4.
 Der vælges at starte samtalen på ny for at dokumentere hele forløbet, dog vælges at ChatGPT 4 i stedet for 4o i håbet om at guiden er mere retvisende. Yderligere ændres indledendeprompt en lille smule ift. den erfaring der er dannet i nuværende samtale med ChatGPT 4o
-     ```
+```
 
 
   
