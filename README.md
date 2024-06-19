@@ -43,6 +43,8 @@ Jeg spurgte ChatGPT hvorfor dette ikke var tilfældet og ChatGPT valgte at opdat
   <summary>Prompt history - ChatGPT 4</summary>
 
 ## Prompt history - ChatGPT 4
-  1. [Full: Prompt history]()
+  1. [Full: Prompt history](https://chatgpt.com/share/72ef4e92-3fb2-4f4c-90d5-e131829f7eb1)
+  2. [Indledende promt history]()
+  3. []()
 
 </details>
