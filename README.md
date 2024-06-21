@@ -69,8 +69,6 @@ Sektion 1 er allerede gennemført derfor referes der til samtalen i ChatGPT 4o.
 ```
 </details>
 
-</details>
-
 <details id="02.ChatGPT-4">
   <summary>Sektion 2: Databasemodel og Access</summary>
 
@@ -88,5 +86,4 @@ pck3 =  Microsoft.EntityFrameWorkCore.Tools
 Dette blev løst takket være denne youtube video https://www.youtube.com/watch?v=Nmmo6TbX5kw.
 Løsningen er 2:34 minutter frem i videoen, hvor den korrekte package source (https://api.nuget.org/v3/index.json) er givet.
 ```
-``` 
 </details>
