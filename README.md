@@ -71,9 +71,8 @@ Sektion 1 er allerede gennemført derfor referes der til samtalen i ChatGPT 4o.
 <details id="02.ChatGPT-4">
   <summary>Sektion 2: Databasemodel og Access</summary>
 
-## Sektion 2: Databasemodel og Access  
- 
-    1. Supplerende Youtube video [NuGet - Packages Source Visual Studio | Gerald Inside | 5m:10s](https://www.youtube.com/watch?v=Nmmo6TbX5kw)
+## Sektion 2: Databasemodel og Access   
+1. Supplerende Youtube video [NuGet - Packages Source Visual Studio | Gerald Inside | 5m:10s](https://www.youtube.com/watch?v=Nmmo6TbX5kw)
 
 ### Beskrivelse
 ```
