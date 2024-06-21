@@ -1,6 +1,6 @@
 # KunstigIntelligens_Eksamensprojekt_BDReminder
 # Prompt history - ChatGPT 4o
-<details id="ChatGPT 4o">
+<details id="00.ChatGPT 4o">
   <summary>Prompt history - ChatGPT 4o</summary>
 
 ## Prompt history - ChatGPT 4o
@@ -24,7 +24,7 @@ Jeg anvendte CREATE modellen til at udarbejde min indledende prompt.
 ```
 </details>
 
-<details id="ChatGPT 4o">
+<details id="01.ChatGPT 4o">
   <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
 
 ## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
@@ -39,7 +39,7 @@ Jeg spurgte ChatGPT hvorfor dette ikke var tilfældet og ChatGPT valgte at opdat
 </details>
 
 # Prompt history - ChatGPT 4
-<details id="ChatGPT 4">
+<details id="00.ChatGPT 4">
   <summary>Prompt history - ChatGPT 4</summary>
 
 ## Prompt history - ChatGPT 4
@@ -47,4 +47,11 @@ Jeg spurgte ChatGPT hvorfor dette ikke var tilfældet og ChatGPT valgte at opdat
   2. [Indledende promt history]()
   3. []()
 
+</details>
+
+<details id="01.ChatGPT 4">
+  <summary>Sektion 1: Se svaret under ChatGPT 4o</summary>
+
+## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
+[Se svaret under ChatGPT 4o](id="01.ChatGPT 4o")
 </details>
