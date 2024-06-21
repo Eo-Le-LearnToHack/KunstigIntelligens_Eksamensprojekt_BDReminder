@@ -27,6 +27,7 @@ Yderligere ændres indledende prompt en lille smule ift. den erfaring der er dan
   <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
   
 ## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)  
+  
     1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
  
 ### Beskrivelse  
@@ -85,6 +86,7 @@ pck2 =  Microsoft.EntityFrameWorkCore.SqlServer
 pck3 =  Microsoft.EntityFrameWorkCore.Tools
 
 Dette blev løst takket være denne youtube video https://www.youtube.com/watch?v=Nmmo6TbX5kw.
-Løsningen er 2:34 minutter frem i videoen, hvor den korrekte package source (https://api.nuget.org/v3/index.json) er givet. 
+Løsningen er 2:34 minutter frem i videoen, hvor den korrekte package source (https://api.nuget.org/v3/index.json) er givet.
+```
 ``` 
 </details>
