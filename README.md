@@ -53,5 +53,5 @@ Jeg spurgte ChatGPT hvorfor dette ikke var tilfældet og ChatGPT valgte at opdat
   <summary>Sektion 1: Se svaret under ChatGPT 4o</summary>
 
 ## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
-[Se svaret under ChatGPT 4o](01.ChatGPT 4o)
+[Se svaret under ChatGPT 4o](#01.ChatGPT 4o)
 </details>
