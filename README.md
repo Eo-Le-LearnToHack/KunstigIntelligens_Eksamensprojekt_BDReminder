@@ -65,6 +65,10 @@ Jeg anvendte samme CREATE modellen til at prompte.
 ### Beskrivelse  
 ```
 Sektion 1 er allerede gennemført derfor referes der til samtalen i ChatGPT 4o.
+Dog blev der verificeret at ChatGPT havde ikke gennemgået sit svar og forbedret det 3 gange før det endelige svar blev præsenteret.
+ChatGPT præsentere blot sit første svar.
+Yderligere var der fejl på versionsangivelse af VS Communutity. Version 2023 findes ikke. Nyeste version var 2022.
+
 ```
 </details>
 
@@ -83,5 +87,7 @@ pck3 =  Microsoft.EntityFrameWorkCore.Tools
 
 Dette blev løst takket være denne youtube video https://www.youtube.com/watch?v=Nmmo6TbX5kw.
 Løsningen er 2:34 minutter frem i videoen, hvor den korrekte package source (https://api.nuget.org/v3/index.json) er givet.
+
+Jeg tog et kug tilbage på 1Sektion og overvejer at gå tilbage til ChatG<p<t 4o
 ```
 </details>
