@@ -26,10 +26,10 @@ Yderligere ændres indledende prompt en lille smule ift. den erfaring der er dan
 <details id="01.ChatGPT-4o">
   <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
   
-## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)
+## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)  
     1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
  
-### Beskrivelse
+### Beskrivelse  
 ```
 I sektion 1 blev jeg nysgerrig på hvad ASP.NET Core Web App var og søgte mere viden på youtube, hvor jeg stødte på ovenstående video.
 11 minutter i videoen blev der valgt indivual user ved authentication som ikke var dækket af guiden i Sektion 1.
@@ -40,17 +40,17 @@ Dette skulle jeg ikke have gjort fordi samtalen kunne ikke deles hvis der er bil
 ``` 
 </details>
 
-# Prompt history - ChatGPT 4
+# Prompt history - ChatGPT 4  
 <details id="00.ChatGPT-4">
   <summary>Prompt history - ChatGPT 4</summary>
 
-## Prompt history - ChatGPT 4
+## Prompt history - ChatGPT 4  
   1. [Full: Prompt history](https://chatgpt.com/share/72ef4e92-3fb2-4f4c-90d5-e131829f7eb1)
   2. [Indledende promt history]()
   3. [Sektion 1:]()
   4. [Sektion 2:]()
   
-### Beskrivelse
+### Beskrivelse  
 ```
 Jeg startede på en ny samtale i ChatGPT 4 og forbedrede min prompt baseret på erfaring fra tidligere samtale i ChatGPT 4o.
 Jeg anvendte samme CREATE modellen til at prompte.
@@ -62,7 +62,7 @@ Jeg anvendte samme CREATE modellen til at prompte.
 
 [Se svaret under ChatGPT 4o](#01.ChatGPT-4o)  
   
-### Beskrivelse
+### Beskrivelse  
 ```
 Sektion 1 er allerede gennemført derfor referes der til samtalen i ChatGPT 4o.
 ```
@@ -73,7 +73,8 @@ Sektion 1 er allerede gennemført derfor referes der til samtalen i ChatGPT 4o.
 <details id="02.ChatGPT-4">
   <summary>Sektion 2: Databasemodel og Access</summary>
 
-## Sektion 2: Databasemodel og Access
+## Sektion 2: Databasemodel og Access  
+ 
     1. Supplerende Youtube video [NuGet - Packages Source Visual Studio | Gerald Inside | 5m:10s](https://www.youtube.com/watch?v=Nmmo6TbX5kw)
 
 ### Beskrivelse
