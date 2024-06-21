@@ -27,8 +27,7 @@ Yderligere ændres indledende prompt en lille smule ift. den erfaring der er dan
   <summary>Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)</summary>
   
 ## Sektion 1: Opsætning af Projektet i Visual Studio (Opdateret)  
-  
-    1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
+1. Supplerende Youtube video [ASP.NET Core Crash Course - C# App in One Hour | freeCodeCamp.org | 1h:0m:43s](https://www.youtube.com/watch?v=BfEjDD8mWYg)
  
 ### Beskrivelse  
 ```
