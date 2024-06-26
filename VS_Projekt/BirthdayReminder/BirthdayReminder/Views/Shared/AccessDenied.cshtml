@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Access Denied"; // Sætter sidetitlen til "Access Denied"
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - BirthdayReminder</title> <!-- Dynamisk sidetitel -->
+    <link rel="stylesheet" href="~/css/site.css" /> <!-- Link til stylesheet -->
+</head>
+<body>
+    <div class="container">
+        <h1>@ViewData["Title"]</h1> <!-- Viser "Access Denied" som overskrift -->
+        <p>You do not have permission to access this resource.</p> <!-- Besked til brugeren -->
+        <a href="javascript:history.back()">Go Back</a> <!-- Link til at gå tilbage -->
+    </div>
+</body>
+</html>

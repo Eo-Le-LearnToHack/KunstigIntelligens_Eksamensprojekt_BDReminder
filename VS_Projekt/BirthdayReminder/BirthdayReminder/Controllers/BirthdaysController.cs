@@ -1,15 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BirthdayReminder.Data;
 using BirthdayReminder.Models;
+using System.Linq;
+using System.Threading.Tasks;
 
 namespace BirthdayReminder.Controllers
 {
+    [Authorize] // Beskyt hele kontrolleren, så kun godkendte brugere har adgang
     public class BirthdaysController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -44,16 +43,16 @@ namespace BirthdayReminder.Controllers
         }
 
         // GET: Birthdays/Create
+        [Authorize(Roles = "admin")] // Kun admin kan oprette fødselsdage
         public IActionResult Create()
         {
             return View();
         }
 
         // POST: Birthdays/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")] // Kun admin kan oprette fødselsdage
         public async Task<IActionResult> Create([Bind("Id,Name,Date,Relationship")] Birthday birthday)
         {
             if (ModelState.IsValid)
@@ -66,6 +65,7 @@ namespace BirthdayReminder.Controllers
         }
 
         // GET: Birthdays/Edit/5
+        [Authorize(Roles = "admin")] // Kun admin kan redigere fødselsdage
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -82,10 +82,9 @@ namespace BirthdayReminder.Controllers
         }
 
         // POST: Birthdays/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")] // Kun admin kan redigere fødselsdage
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Date,Relationship")] Birthday birthday)
         {
             if (id != birthday.Id)
@@ -117,6 +116,7 @@ namespace BirthdayReminder.Controllers
         }
 
         // GET: Birthdays/Delete/5
+        [Authorize(Roles = "admin")] // Kun admin kan slette fødselsdage
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -137,14 +137,11 @@ namespace BirthdayReminder.Controllers
         // POST: Birthdays/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = "admin")] // Kun admin kan slette fødselsdage
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var birthday = await _context.Birthdays.FindAsync(id);
-            if (birthday != null)
-            {
-                _context.Birthdays.Remove(birthday);
-            }
-
+            _context.Birthdays.Remove(birthday);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
