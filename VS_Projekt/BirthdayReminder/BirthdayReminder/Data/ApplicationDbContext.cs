@@ -9,5 +9,7 @@ namespace BirthdayReminder.Data
             : base(options)
         {
         }
+
+        public DbSet<BirthdayReminder.Models.Birthday> Birthdays { get; set; }
     }
 }
