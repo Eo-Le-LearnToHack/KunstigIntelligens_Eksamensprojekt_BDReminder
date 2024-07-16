@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using BirthdayReminder.Models;
 
 namespace BirthdayReminder.Data
 {
@@ -10,6 +11,6 @@ namespace BirthdayReminder.Data
         {
         }
 
-        public DbSet<BirthdayReminder.Models.Birthday> Birthdays { get; set; }
+        public DbSet<Birthday> Birthdays { get; set; }
     }
 }
