@@ -16,7 +16,7 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 // Konfigurer cookie-indstillinger, herunder Access Denied sti
 builder.Services.ConfigureApplicationCookie(options =>
 {
-    options.AccessDeniedPath = "/Shared/AccessDenied"; // Indstil stien til Access Denied-siden
+    options.AccessDeniedPath = "/AccessDenied"; // Indstil stien til Access Denied-siden
 });
 
 builder.Services.AddControllersWithViews(); // Tilføj MVC Controller og View support
