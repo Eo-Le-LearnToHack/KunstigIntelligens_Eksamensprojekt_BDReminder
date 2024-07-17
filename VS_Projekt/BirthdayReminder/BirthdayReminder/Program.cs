@@ -4,13 +4,13 @@ using BirthdayReminder.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Tilføj services til containeren
+// Tilfï¿½j services til containeren
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Konfigurerer DbContext til at bruge SQL Server
 
-// Tilføj Identity services med roller
+// Tilfï¿½j Identity services med roller
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>() // Tilføj rollebaseret autorisation
+    .AddRoles<IdentityRole>() // Tilfï¿½j rollebaseret autorisation
     .AddEntityFrameworkStores<ApplicationDbContext>(); // Konfigurerer Entity Framework til at bruge ApplicationDbContext
 
 // Konfigurer cookie-indstillinger, herunder Access Denied sti
@@ -19,19 +19,19 @@ builder.Services.ConfigureApplicationCookie(options =>
     options.AccessDeniedPath = "/AccessDenied"; // Indstil stien til Access Denied-siden
 });
 
-builder.Services.AddControllersWithViews(); // Tilføj MVC Controller og View support
+builder.Services.AddControllersWithViews(); // Tilfï¿½j MVC Controller og View support
 
 var app = builder.Build();
 
 // Konfigurer HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage(); // Brug udviklerspecifik fejlside i udviklingsmiljøet
+    app.UseDeveloperExceptionPage(); // Brug udviklerspecifik fejlside i udviklingsmiljï¿½et
 }
 else
 {
-    app.UseExceptionHandler("/Home/Error"); // Brug brugerdefineret fejlside i produktionsmiljøet
-    app.UseHsts(); // Brug HTTP Strict Transport Security i produktionsmiljøet
+    app.UseExceptionHandler("/Home/Error"); // Brug brugerdefineret fejlside i produktionsmiljï¿½et
+    app.UseHsts(); // Brug HTTP Strict Transport Security i produktionsmiljï¿½et
 }
 
 app.UseHttpsRedirection(); // Omdiriger HTTP til HTTPS
@@ -58,4 +58,4 @@ using (var scope = app.Services.CreateScope())
     SeedData.Initialize(services).Wait(); // Initialiser seed data, inklusiv admin-bruger
 }
 
-app.Run(); // Kør applikationen
+app.Run(); // Kï¿½r applikationen
