@@ -1,37 +1,38 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using BirthdayReminder.Data;
+using Microsoft.Extensions.Logging;
+using BirthdayReminder;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Tilf�j services til containeren
+// Tilføj services til containeren
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))); // Konfigurerer DbContext til at bruge SQL Server
 
-// Tilf�j Identity services med roller
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddRoles<IdentityRole>() // Tilf�j rollebaseret autorisation
-    .AddEntityFrameworkStores<ApplicationDbContext>(); // Konfigurerer Entity Framework til at bruge ApplicationDbContext
-
-// Konfigurer cookie-indstillinger, herunder Access Denied sti
-builder.Services.ConfigureApplicationCookie(options =>
+builder.Services.AddDefaultIdentity<IdentityUser>(options =>
 {
-    options.AccessDeniedPath = "/AccessDenied"; // Indstil stien til Access Denied-siden
-});
-
-builder.Services.AddControllersWithViews(); // Tilf�j MVC Controller og View support
+    options.SignIn.RequireConfirmedAccount = true;
+    options.Password.RequireDigit = false;
+    options.Password.RequireLowercase = false;
+    options.Password.RequireNonAlphanumeric = false;
+    options.Password.RequireUppercase = false;
+    options.Password.RequiredLength = 6;
+})
+    .AddRoles<IdentityRole>() // Tilføj rollebaseret autorisation
+    .AddEntityFrameworkStores<ApplicationDbContext>(); // Konfigurerer Entity Framework til at bruge ApplicationDbContext
 
 var app = builder.Build();
 
 // Konfigurer HTTP request pipeline
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage(); // Brug udviklerspecifik fejlside i udviklingsmilj�et
+    app.UseDeveloperExceptionPage(); // Brug udviklerspecifik fejlside i udviklingsmiljøet
 }
 else
 {
-    app.UseExceptionHandler("/Home/Error"); // Brug brugerdefineret fejlside i produktionsmilj�et
-    app.UseHsts(); // Brug HTTP Strict Transport Security i produktionsmilj�et
+    app.UseExceptionHandler("/Home/Error"); // Brug brugerdefineret fejlside i produktionsmiljøet
+    app.UseHsts(); // Brug HTTP Strict Transport Security i produktionsmiljøet
 }
 
 app.UseHttpsRedirection(); // Omdiriger HTTP til HTTPS
@@ -52,10 +53,23 @@ app.MapRazorPages(); // Map Razor Pages
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
+    var logger = services.GetRequiredService<ILogger<Program>>(); // Hent logger
     var userManager = services.GetRequiredService<UserManager<IdentityUser>>(); // Hent UserManager service
     var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>(); // Hent RoleManager service
-    RoleInitializer.InitializeAsync(userManager, roleManager).Wait(); // Initialiser roller
-    SeedData.Initialize(services).Wait(); // Initialiser seed data, inklusiv admin-bruger
+
+    try
+    {
+        RoleInitializer.InitializeAsync(userManager, roleManager).Wait(); // Initialiser roller
+        SeedData.Initialize(services).Wait(); // Initialiser seed data, inklusiv admin-bruger
+        logger.LogInformation("Seed data successfully initialized.");
+
+        // Kald TestPassword metoden for at tjekke admin password
+        await TestPassword.CheckAdminPassword(services);
+    }
+    catch (Exception ex)
+    {
+        logger.LogError(ex, "An error occurred while seeding the database.");
+    }
 }
 
-app.Run(); // K�r applikationen
+app.Run(); // Kør applikationen
